@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookVerse</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #121212;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    .cta-button {
+      background-color: #ff6b00;
+      padding: 0.6rem 1rem;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background-color: #fff;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      color: #121212;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons .btn {
+      background-color: #ff6b00;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+      min-width: 300px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff6b00;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .categories, .top-reads {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .category-box, .book-box {
+      padding: 1rem;
+      background: #f3f3f3;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #121212;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">📚 BookVerse</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#topreads">Top Reads</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#" class="cta-button">📥 Download App</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Read Anywhere, Anytime 📖</h1>
+        <p>Access thousands of books across genres. Download and read offline in one click.</p>
+        <div class="hero-buttons">
+          <a href="Readingbooks.html" class="btn primary">📚 Start Reading</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="C:\Users\Parkash Suthar\Desktop\suthar ALMANI\images.jpg" alt="Books Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories">
+    <h2>📂 Categories</h2>
+    <div class="categories">
+      <div class="category-box">Fiction</div>
+      <div class="category-box">Non-Fiction</div>
+      <div class="category-box">Science</div>
+      <div class="category-box">History</div>
+      <div class="category-box">Romance</div>
+      <div class="category-box">Mystery</div>
+    </div>
+  </section>
+
+  <!-- Top Reads Section -->
+  <section id="topreads">
+    <h2>🔥 Top Reads</h2>
+    <div class="top-reads">
+      <div class="book-box">Atomic Habits</div>
+      <div class="book-box">Ikigai</div>
+      <div class="book-box">Rich Dad Poor Dad</div>
+      <div class="book-box">The Alchemist</div>
+      <div class="book-box">Wings of Fire</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>📘 About BookVerse</h2>
+    <p>
+      BookVerse is your digital library for discovering and reading amazing books. Whether you're into fiction, science, or motivation — we've got it all. We aim to promote a reading culture with easy access to books in multiple languages and formats.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <p>
+      Got questions or suggestions? We'd love to hear from you! <br />
+      📧 Email: support@bookverse.com <br />
+      📍 Address: 123 Reading Lane, Knowledge City, PK <br />
+      📱 Phone: +92 123 4567890
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 BookVerse. All rights reserved.
+  </footer>
+
+</body>
+</html>

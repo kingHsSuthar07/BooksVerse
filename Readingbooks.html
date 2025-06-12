@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Class | BookVerse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #ff6b00;
+    }
+
+    .class-grid {
+        text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .class-button {
+    
+      background-color: #1f1f1f;
+      border: 2px solid #ff6b00;
+      color: #fff;
+      padding: 1.2rem;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .class-button:hover {
+      background-color: #ff6b00;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .class-button {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Select Your Class</h1>
+
+  <div class="class-grid">
+  <a href="1.html" class="class-button">Class 1</a>
+  <a href="2.html" class="class-button">Class 2</a>
+  <a href="3.html" class="class-button">Class 3</a>
+  <a href="4.html" class="class-button">Class 4</a>
+  <a href="5.html" class="class-button">Class 5</a>
+  <a href="6.html" class="class-button">Class 6</a>
+  <a href="7.html" class="class-button">Class 7</a>
+  <a href="8.html" class="class-button">Class 8</a>
+  <a href="9.html" class="class-button">Class 9</a>
+  <a href="10.html" class="class-button">Class 10</a>
+  <a href="11.html" class="class-button">Class 11</a>
+  <a href=".html" class="class-button">Class 12</a>
+</div>
+
+<script>
+  document.querySelectorAll('.class-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const classNumber = button.textContent.split(' ')[1];
+      window.location.href = `class${classNumber}.html`;
+    });
+  });
+
+</script>
+
+</body>
+</html>
